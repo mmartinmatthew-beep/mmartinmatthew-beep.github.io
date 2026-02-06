@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content=" Matthew Martin's personal web site showcasing education, work experience, skills, certifications, and projects.">
     <meta name="keywords" content= "Matthew Martin, SHSU, COBA, MIS, Student">
-    <title> Matthew Martin's web site </title>
+<title> Matthew Martin's web site </title>
     <link rel="stylesheet" href="styles/mainn8css.css">
 </head>
 <body>
