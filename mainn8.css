@@ -1,0 +1,45 @@
+html{
+    background-color: linear-gradient(to bottom, white 0%, #cd791f 100%);
+}
+body {
+    font-family : Arial, Helvetica, sans-serif,'Times New Roman', Times, serif;
+    color: black;
+    width:1000px;
+    margin: 15px auto;
+    background-color: white;
+    font-size: 100%;
+    padding: 15px 1.5em;
+    border: 1px solid #0b0b0b;
+    border-radius: 25px;
+    box-shadow: 5px 5px 0 0;
+    background: url("/image/my-image.jpg") right repeat-y;
+    background-attachment: fixed;
+    
+}
+a:hover,a:focus {
+    font-style: italic;
+    color: rgb(60, 0, 255);
+
+}
+Header h1{
+    font-size: 175%;
+    color: rgb(0, 195, 255);
+    text-indent: 30px;
+
+}
+header h2{ 
+    font-size: 130%;
+    color: hsl(72, 83%, 45%);
+    text-indent: 30px
+    }
+header img{
+    float: left;
+    
+}
+.shadow{
+    text-shadow: 2px 2px 2px rgb(128,0,0);
+}
+    main{
+        clear: both
+    }
+    

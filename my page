@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Matthew Martin's official personal web site">
+    <meta name="keywords" content="Matthew Martin, SHSU, COBA, MIS, student">
+    <title>Matthew Martin's web site</title>
+</head>
+
+<body>
+
+<header>
+    <!-- Put your photo in a folder named "file" and remove spaces from filename -->
+    <img src="file/myphoto.jpg" alt="my picture" height="120">
+</header>
+
+<main>
+
+    <h1>Welcome to my web site!</h1>
+
+    <h2>https://github.com/mmartinmatthew-beep</h2>
+
+    <h3>
+        My name is Matthew Martin and I am a Management Information Systems student at Sam Houston State University.
+        I am interested in technology, business, and financial markets. I enjoy learning how data, software,
+        and systems work together to help organizations make better decisions. My goal is to build strong technical
+        and analytical skills so I can succeed in a technology-driven business career.
+    </h3>
+
+    <nav>
+        <ul>
+            <li>Education</li>
+            <li>Work Experience</li>
+            <li>Knowledge and Skills</li>
+            <li>Certifications</li>
+            <li><a href="#">Class Project</a></li>
+        </ul>
+    </nav>
+
+    <p>
+        Click here to download
+        <a href="files/MatthewMartin-CV24.pdf">my resume</a>
+    </p>
+
+    <p>
+        Click here to go to
+        <a href="https://www.linkedin.com" target="_blank">my LinkedIn</a>
+    </p>
+
+    <p>
+        Contact me at
+        <em><a href="mailto:mmm168@shsu.edu">mmm168@shsu.edu</a></em>
+    </p>
+
+    <br>
+    <hr>
+
+</main>
+
+<footer>
+    &copy; 2026 Matthew Martin
+</footer>
+
+</body>
+</html>
