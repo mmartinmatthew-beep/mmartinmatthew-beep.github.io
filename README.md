@@ -10,24 +10,25 @@
 </head>
 <body>
     <header>
-        <img src="C:\Users\m3m11\OneDrive\files\martinpic.JPEG" alt="Martin's picture" height="100">
+        <img src="martinpic.JPEG" alt="Martin's picture" height="100">
         <h1 class="shadow">Welcome to my web site!</h1>
-        <h2 class="shadow">https://legendary-space-barnacle-wr6vrr6w9jq4f5wv9.github.dev/</h2>
+        <h2 class="shadow">https://github.com/mmartinmatthew-beep/mmartinmatthew-beep</h2>
     </header>
     <main>   
         <h3> About Me</h3>
-        <p>My name is Matthew Martin, and I am a student at Sam Houston State University. I am currently pursuing a degree in Management Information Systems (MIS) within the College of Business Administration (COBA), with a minor in Information Technology Assurance. I am passionate about technology and its applications in business, and I am eager to gain practical experience in the field. I have a strong interest in data analysis, cybersecurity, and software development. I am committed to developing my skills and knowledge to become a successful professional in the technology
+        <p>My name is Matthew Martin, and I am a student at Sam Houston State University. I am currently pursuing a degree in Management Information Systems (MIS) within the College of Business Administration (COBA), with a minor in Information Technology Assurance. I am passionate about technology and its applications in business, and I am eager to gain practical experience in the field. I have a strong interest in data analysis, cybersecurity, and software development. I am committed to developing my skills and knowledge to become a successful professional in the technology field
         <nav>
             <ul id="list">
-                <li>Education</li>
-                <li>Work Experience</li>
-                <li><a href="Knowledge and Skills"> Bachelors of Science in Management Information Systems</a> </li>
-                <li><a href="Certifications"> Accomplished Certifications</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Work Experience</a></li>
+                <li><a href="#skills">Knowledge and Skills</a></li>
+                <li><a href="#certs">Accomplished Certifications</a></li>
                 <li><a href="https://MatthewMartin.github.io/#">Class Projects</a></li>
+            </ul>
             </ul>
         </nav>
         <div class="contact">
-            <p>Click here to download <a href="C:\Users\m3m11\OneDrive\files\Matthew M.  Martin - CV25.pdf">my resume</a></p>
+            <p>Click here to download <a href="Matthew M. Martin - CV25.pdf">my resume</a></p>
             <p>Click here to go to <a href="https://www.linkedin.com" target="_blank">my LinkedIn</a></p>
             <p>Contact me at <em><a href="mailto:mmm168@shsu.edu">mmm168@shsu.edu</a></em> for any inquiries</p>
         </div>
