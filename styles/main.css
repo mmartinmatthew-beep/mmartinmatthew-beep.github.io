@@ -1,0 +1,105 @@
+/* Q3 Requirement: Gradient background for HTML */
+html {
+    background-image: linear-gradient(to bottom, white 0%, #facd8a 100%);
+}
+
+/* Q2 & Q3 Requirements: Body styling */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Q2 */
+    font-size: 100%; /* Q2 */
+    
+    /* Q3 Overrides */
+    background-color: white; 
+    width: 1000px;
+    margin: 15px auto; /* Centers the page */
+    padding: 15px 1.5em;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 5px 5px 0 0;
+     /* ".." means go up one folder level to find the image */
+background: url("../martinpic.JPEG") right repeat-y fixed;
+}
+
+/* Q2 Requirement: Links */
+a:hover, a:focus {
+    font-style: italic;
+    color: orangered;
+}
+
+/* Q2 Requirement: Headers */
+header h1 {
+    font-size: 175%;
+    color: maroon;
+    text-indent: 30px;
+}
+
+header h2 {
+    font-size: 130%;
+    color: #800000;
+    text-indent: 30px;
+}
+
+/* Q2 Requirement: Image float */
+/* Q3 Requirement: Align image with content boxes (2em margin) */
+header img {
+    float: left;
+    margin-left: 2em; 
+}
+
+/* Q2 Requirement: Shadow Class */
+.shadow {
+    text-shadow: 2px 2px 2px rgb(128, 0, 0);
+}
+
+/* Q2 Requirement: Clear float */
+main {
+    clear: left;
+}
+
+/* Q3 Requirement: H3 (About Me) Styling */
+main h3 {
+    margin-top: 3em; 
+    margin-right: 2em;
+    margin-bottom: 1.5em;
+    margin-left: 2em;
+    
+    border: 5px double blue;
+    border-radius: 20px;
+    box-shadow: 3px 3px 4px 4px red;
+    padding: 1em;
+    
+    font-size: 105%; /* Q2 */
+}
+
+/* Q3 Requirement: Nav Container Styling */
+nav {
+    margin: 1.5em 2em; /* Top/Bottom 1.5em, Left/Right 2em */
+    border: 5px dashed blue;
+    border-radius: 20px;
+    box-shadow: 3px 3px 4px 4px red;
+    padding: 0.5em;
+}
+
+/* Q2 Requirement: List Line Height */
+#list {
+    line-height: 1.5em;
+}
+
+/* Q3 Requirement: Contact Div Styling */
+.contact {
+    margin-top: 1.5em;
+    margin-right: 2em;
+    margin-bottom: 0em;
+    margin-left: 2em;
+    
+    border: 5px dotted blue;
+    border-radius: 20px;
+    box-shadow: 3px 3px 4px 4px red;
+    padding: 1em;
+}
+
+/* Q2 Requirement: Footer styling */
+.copyright {
+    text-align: center;
+    font-size: 80%;
+}
