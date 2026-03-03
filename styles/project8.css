@@ -1,24 +1,22 @@
 /* Q3 Requirement: Gradient background for HTML */
 html {
-    [cite_start]/* Changed from to bottom to 'to left' [cite: 9] */
     background-image: linear-gradient(to left, white 0%, #facd8a 100%); 
 }
 
 /* Q2 & Q3 Requirements: Body styling */
 body {
-    font-family: Arial, Helvetica, sans-serif; /* Q2 */
-    font-size: 100%; /* Q2 */
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 100%; 
     
     /* Q3 Overrides */
     background-color: white; 
     width: 90%;
-    margin: 15px auto; /* Centers the page */
+    margin: 15px auto; 
     padding: 15px 1.5em;
     border: 1px solid black;
     border-radius: 25px;
     box-shadow: 5px 5px 0 0;
-     /* ".." means go up one folder level to find the image */
-background: url("../martinpic.JPEG") right repeat-y fixed;
+    background: url("../martinpic.JPEG") right repeat-y fixed;
 }
 
 /* Q2 Requirement: Links */
@@ -27,7 +25,6 @@ a:hover, a:focus {
     color: orangered;
     border: 3px blue;
     border-style: dotted solid;
-    
 }
 
 /* Q2 Requirement: Headers */
@@ -44,60 +41,57 @@ header h2 {
 }
 
 /* Q2 Requirement: Image float */
-/* Q3 Requirement: Align image with content boxes (2em margin) */
 header img {
     float: left;
     margin-left: 2em; 
-
 }
-.shadow{
+
+.shadow {
     text-shadow: 2px 2px 2px rgb(128,0,0);
-
 }
-article{
+
+article {
     clear: left;
     width: 70%; 
     float: left;
-    column-count:2; 
-    [cite_start]/* Changed orange to maroon [cite: 12] */
+    column-count: 2; 
     column-rule: 2px dotted maroon; 
     column-gap: 2em;
     margin-left: 2em;
- }
- article h3 {
+}
+
+article h3 {
     column-span: all;
- }
- article img{
-    float:left;
-    [cite_start]/* Changed margin-left to margin-right [cite: 14] */
+}
+
+article img {
+    float: left;
     margin-right: 1em; 
     margin-bottom: 1em;
- }
- article p::first-letter{
-    font-size:3em;
-    font-weight:bold;
-    font-style:italic;
-    [cite_start]/* Changed yellowgreen to lightgreen [cite: 15] */
-     color:lightgreen;
- }
- aside{
-    width:20%;
+}
+
+article p::first-letter {
+    font-size: 3em;
+    font-weight: bold;
+    font-style: italic;
+    color: lightgreen; 
+}
+
+aside {
+    width: 20%;
     float: right; 
-    [cite_start]/* Changed background color from white to #ffebc6 [cite: 16] */
-    background-color:#ffebc6; 
-    [cite_start]/* Added padding [cite: 17] */
+    background-color: #ffebc6; 
     padding: 1em; 
 }
-footer{
-    clear:both;
-    [cite_start]/* Changed border-top color from orange to maroon [cite: 18] */
+
+footer {
+    clear: both;
     border-top: 2px solid maroon; 
 }
 
-[cite_start]/* Added the missing fixed class for the contact box [cite: 19] */
 .fixed {
-    position: fixed; [cite_start]/* Ensures it doesn't scroll with the page [cite: 20] */
-    width: auto; [cite_start]/* Required by instructions [cite: 19] */
+    position: fixed; 
+    width: auto; 
     bottom: 20%; 
     right: 0; 
     background-color: lightgreen; 
