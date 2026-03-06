@@ -1,15 +1,15 @@
-/* Gradient background for HTML */
+/* Q3 Requirement: Gradient background for HTML */
 html {
     /* Changed from to bottom to to left */
     background-image: linear-gradient(to left, white 0%, #facd8a 100%);
 }
 
-/*  Body styling */
+/* Q2 & Q3 Requirements: Body styling */
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%; 
     background-color: white; 
-    width: 90%; /*  updated width */
+    width: 90%; /* Q4 updated width */
     margin: 15px auto; 
     padding: 15px 1.5em;
     border: 1px solid black;
@@ -18,7 +18,7 @@ body {
     background: url("../martinpic.JPEG") right repeat-y fixed;
 }
 
-/*  Links */
+/* Q2 Requirement: Links */
 a:hover, a:focus {
     font-style: italic;
     color: orangered;
@@ -27,7 +27,7 @@ a:hover, a:focus {
     border-style: dotted solid;
 }
 
-/*  Headers */
+/* Q2 Requirement: Headers */
 header h1 {
     font-size: 175%;
     color: maroon;
@@ -40,7 +40,7 @@ header h2 {
     text-indent: 30px;
 }
 
-/*  Image float and align */
+/* Q2 & Q3 Requirement: Image float and align */
 header img {
     float: left;
     margin-left: 2em; 
@@ -50,7 +50,7 @@ header img {
     text-shadow: 2px 2px 2px rgb(128,0,0);
 }
 
-/*  Article styling */
+/* Q4 Requirements: Article styling */
 article {
     clear: left;
     width: 70%; 
@@ -78,7 +78,7 @@ article p::first-letter {
     color: lightgreen; /* Changed from yellowgreen */
 }
 
-/* Aside styling */
+/* Q4 Requirements: Aside styling */
 aside {
     width: 20%;
     float: right; 
@@ -86,7 +86,7 @@ aside {
     padding: 1em; /* Added padding */
 }
 
-/*  Footer styling */
+/* Q4 Requirements: Footer styling */
 footer {
     clear: both;
     border-top: 2px solid maroon; /* Changed from orange */
@@ -95,7 +95,7 @@ footer {
     font-size: 80%;
 }
 
-/* Fixed paragraph styling */
+/* Q4 Requirements: Fixed paragraph styling */
 p.fixed {
     position: fixed;
     bottom: 20px;
