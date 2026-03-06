@@ -1,16 +1,15 @@
-/* Q3 Requirement: Gradient background for HTML */
+/* Gradient background for HTML */
 html {
-    background-image: linear-gradient(to left, white 0%, #facd8a 100%); 
+    /* Changed from to bottom to to left */
+    background-image: linear-gradient(to left, white 0%, #facd8a 100%);
 }
 
-/* Q2 & Q3 Requirements: Body styling */
+/*  Body styling */
 body {
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 100%; 
-    
-    /* Q3 Overrides */
     background-color: white; 
-    width: 90%;
+    width: 90%; /*  updated width */
     margin: 15px auto; 
     padding: 15px 1.5em;
     border: 1px solid black;
@@ -19,15 +18,16 @@ body {
     background: url("../martinpic.JPEG") right repeat-y fixed;
 }
 
-/* Q2 Requirement: Links */
+/*  Links */
 a:hover, a:focus {
     font-style: italic;
     color: orangered;
-    border: 3px blue;
+    border-width: 3px;
+    border-color: blue;
     border-style: dotted solid;
 }
 
-/* Q2 Requirement: Headers */
+/*  Headers */
 header h1 {
     font-size: 175%;
     color: maroon;
@@ -40,7 +40,7 @@ header h2 {
     text-indent: 30px;
 }
 
-/* Q2 Requirement: Image float */
+/*  Image float and align */
 header img {
     float: left;
     margin-left: 2em; 
@@ -50,12 +50,13 @@ header img {
     text-shadow: 2px 2px 2px rgb(128,0,0);
 }
 
+/*  Article styling */
 article {
     clear: left;
     width: 70%; 
     float: left;
     column-count: 2; 
-    column-rule: 2px dotted maroon; 
+    column-rule: 2px dotted maroon; /* Changed from orange */
     column-gap: 2em;
     margin-left: 2em;
 }
@@ -66,7 +67,7 @@ article h3 {
 
 article img {
     float: left;
-    margin-right: 1em; 
+    margin-right: 1em; /* Changed from margin-left */
     margin-bottom: 1em;
 }
 
@@ -74,27 +75,34 @@ article p::first-letter {
     font-size: 3em;
     font-weight: bold;
     font-style: italic;
-    color: lightgreen; 
+    color: lightgreen; /* Changed from yellowgreen */
 }
 
+/* Aside styling */
 aside {
     width: 20%;
     float: right; 
-    background-color: #ffebc6; 
-    padding: 1em; 
+    background-color: #ffebc6; /* Changed from white */
+    padding: 1em; /* Added padding */
 }
 
+/*  Footer styling */
 footer {
     clear: both;
-    border-top: 2px solid maroon; 
+    border-top: 2px solid maroon; /* Changed from orange */
+    padding-top: 10px;
+    text-align: center;
+    font-size: 80%;
 }
 
-.fixed {
-    position: fixed; 
-    width: auto; 
-    bottom: 20%; 
-    right: 0; 
-    background-color: lightgreen; 
-    border: 2px solid black; 
-    padding: 1.5em; 
+/* Fixed paragraph styling */
+p.fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: auto;
+    background-color: lightgreen; /* Matching the screenshot */
+    border: 2px solid black;
+    padding: 15px;
+    margin: 0;
 }
