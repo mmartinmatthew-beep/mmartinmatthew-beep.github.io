@@ -2,12 +2,12 @@
 body {
     width: 95%;
     margin: 15px auto;
-    border: 2px solid black; /* Border around the body */
+    border: 2px solid black; 
     background-image: url('your-background-image.jpg'); /* REPLACE THIS WITH A REAL IMAGE URL */
     background-attachment: fixed;
     background-size: cover;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4; /* Fallback color */
+    background-color: #f4f4f4; 
 }
 
 /* Navigation Menu */
@@ -32,21 +32,29 @@ nav a {
 
 /* Container to hold article and aside */
 .container {
-    display: flex; /* Helps align the aside and article side by side */
+    display: flex; 
     position: relative;
-    background-color: rgba(255, 255, 255, 0.85); /* Readability over background */
+    background-color: rgba(255, 255, 255, 0.85); 
 }
 
-/* Article styles */
+/* Article styles (Updated with columns and justified text) */
 article {
     width: 75%;
     padding: 20px;
-    border-right: 2px solid black; /* Line between the columns */
+    border-right: 2px solid black; 
     box-sizing: border-box;
+    column-count: 3; /* Creates the 3 columns */
+    column-rule: 2px dashed blue; /* The dashed lines between columns */
+    text-align: justify; /* Makes the text flush on both sides */
 }
 
-/* Paragraph first-letter styling */
-p::first-letter {
+/* Make sure headings span across the columns */
+article h1, article h2 {
+    column-span: all;
+}
+
+/* Paragraph first-letter styling (Restricted to article only) */
+article p::first-letter {
     font-size: 1.5em;
     font-style: italic;
     font-weight: bold;
@@ -54,19 +62,21 @@ p::first-letter {
 
 /* Image wrapping style */
 .wrap-img {
-    float: right; /* Wraps paragraph text around the image */
+    float: right; 
     margin: 0 0 15px 15px;
     width: 250px;
 }
 
-/* Aside / Sidebar styles */
+/* Aside / Sidebar styles (Updated with blue background and border) */
 aside {
     width: 20%;
-    padding: 21px;
+    padding: 20px;
     box-sizing: border-box;
-    position: fixed; /* Fixed on the screen, does not scroll */
-    right: 2.5%; /* Aligns it properly given the body's 95% width */
+    position: fixed; 
+    right: 2.5%; 
     top: 150px;
+    background-color: lightblue; /* Blue background */
+    border: 2px solid black; /* Black border around the box */
 }
 
 aside a {
