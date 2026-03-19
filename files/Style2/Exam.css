@@ -62,7 +62,7 @@ p::first-letter {
 /* Aside / Sidebar styles */
 aside {
     width: 20%;
-    padding: 20px;
+    padding: 21px;
     box-sizing: border-box;
     position: fixed; /* Fixed on the screen, does not scroll */
     right: 2.5%; /* Aligns it properly given the body's 95% width */
