@@ -10,29 +10,38 @@ body {
     background-color: #f4f4f4; 
 }
 
-/* Navigation Menu */
+/* Navigation Menu - Updated to match flex layout with dividers */
 nav {
-    text-align: center;
-    padding: 20px;
-    background-color: #0b3d91; 
+    display: flex; /* Makes the links sit perfectly in a row */
+    background-color: blue; 
+    margin-top: 10px;
 }
 
 nav a {
-    margin: 0 15px;
+    flex: 1; /* Makes every button the exact same width */
+    text-align: center;
+    padding: 15px 0;
     text-decoration: none;
     color: white; 
     font-weight: bold;
+    border-right: 2px solid white; /* Adds the white divider lines */
+}
+
+/* Removes the divider line from the very last link */
+nav a:last-child {
+    border-right: none; 
 }
 
 nav a:hover {
-    color: #fc3d21; 
+    background-color: darkblue; 
     text-decoration: underline;
 }
 
 /* Horizontal lines below menu and above footer */
 .line-horizontal {
-    border-top: 2px solid black;
+    border-top: 2px solid blue; /* Changed from black to blue */
     width: 100%;
+    margin: 15px 0;
 }
 
 /* Container to hold article and aside */
@@ -49,27 +58,28 @@ article {
     border-right: 2px solid black; 
     box-sizing: border-box;
     column-count: 3; 
-    column-rule: 2px dashed blue; 
+    column-rule: 3px dashed blue; /* Thickened and styled to match */
     text-align: justify; 
 }
 
-/* Make sure headings span across the columns */
+/* Headings - Changed to blue and set to span across columns */
 article h1, article h2 {
+    color: blue; 
     column-span: all;
 }
 
-/* Paragraph first-letter styling (Restricted to article only) */
+/* Paragraph first-letter styling */
 article p::first-letter {
     font-size: 1.5em;
     font-style: italic;
     font-weight: bold;
 }
 
-/* Image wrapping style */
+/* Image wrapping style - Changed to float left */
 .wrap-img {
-    float: right; 
-    margin: 0 0 15px 15px;
-    width: 250px;
+    float: left; /* Image now sits on the left */
+    margin: 0 15px 5px 0; /* Adjusted margins so text wraps cleanly */
+    width: 180px; /* Adjust this value if the NASA logo looks too big/small */
 }
 
 /* Aside / Sidebar styles */
@@ -97,5 +107,6 @@ aside a:hover {
 footer {
     text-align: center;
     padding: 20px;
+    border-top: 2px solid black;
     background-color: rgba(255, 255, 255, 0.9);
 }
