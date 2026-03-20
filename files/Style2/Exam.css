@@ -4,11 +4,11 @@ body {
     margin: 15px auto;
     border: 2px solid black; 
     /* Sam Houston Logo Background */
-    background-image: url('../../images/sam\ logo.jpg'); 
+    background-image: url('../../images/shsu-logo.png'); 
     background-attachment: fixed;
-    background-repeat: no-repeat; /* Stops it from tiling */
-    background-position: center; /* Centers it like a watermark */
-    background-size: 60%; /* Adjust this if the watermark is too big/small */
+    background-position: right top; /* Anchors the logo to the top right */
+    background-repeat: repeat-y;    /* Makes it tile vertically down the right edge */
+    background-size: 45%;           /* Shrinks it to match the professor's scale */
     font-family: Arial, sans-serif;
     background-color: white; 
 }
@@ -17,8 +17,8 @@ body {
 nav {
     display: flex; 
     background-color: blue; 
-    width: 65%; /* Shrinks it from 100% down to the professor's size */
-    margin: 20px 0 0 20px; /* Gives it the exact top and left spacing */
+    width: 65%; 
+    margin: 20px 0 0 20px; 
 }
 
 nav a {
@@ -31,6 +31,7 @@ nav a {
     border-right: 2px solid white; 
 }
 
+/* Removes the divider line from the very last link */
 nav a:last-child {
     border-right: none; 
 }
