@@ -4,7 +4,7 @@ body {
     margin: 15px auto;
     border: 2px solid black; 
     /* Sam Houston Logo Background */
-    background-image: url('../../images/shsu-logo.png'); 
+    background-image: url('../../images/sam\ logo.jpg'); 
     background-attachment: fixed;
     background-position: right top; /* Anchors the logo to the top right */
     background-repeat: repeat-y;    /* Makes it tile vertically down the right edge */
