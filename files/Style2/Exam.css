@@ -3,31 +3,34 @@ body {
     width: 95%;
     margin: 15px auto;
     border: 2px solid black; 
+    /* Sam Houston Logo Background */
     background-image: url('../../images/sam\ logo.jpg'); 
     background-attachment: fixed;
-    background-size: cover;
+    background-repeat: no-repeat; /* Stops it from tiling */
+    background-position: center; /* Centers it like a watermark */
+    background-size: 60%; /* Adjust this if the watermark is too big/small */
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4; 
+    background-color: white; 
 }
 
-/* Navigation Menu - Updated to match flex layout with dividers */
+/* Navigation Menu - Updated size and margins to match prof */
 nav {
-    display: flex; /* Makes the links sit perfectly in a row */
+    display: flex; 
     background-color: blue; 
-    margin-top: 10px;
+    width: 65%; /* Shrinks it from 100% down to the professor's size */
+    margin: 20px 0 0 20px; /* Gives it the exact top and left spacing */
 }
 
 nav a {
-    flex: 1; /* Makes every button the exact same width */
+    flex: 1; 
     text-align: center;
-    padding: 15px 0;
+    padding: 10px 0;
     text-decoration: none;
     color: white; 
     font-weight: bold;
-    border-right: 2px solid white; /* Adds the white divider lines */
+    border-right: 2px solid white; 
 }
 
-/* Removes the divider line from the very last link */
 nav a:last-child {
     border-right: none; 
 }
@@ -39,16 +42,16 @@ nav a:hover {
 
 /* Horizontal lines below menu and above footer */
 .line-horizontal {
-    border-top: 2px solid blue; /* Changed from black to blue */
-    width: 100%;
-    margin: 15px 0;
+    border-top: 2px solid blue; 
+    width: 97%;
+    margin: 15px auto;
 }
 
 /* Container to hold article and aside */
 .container {
     display: flex; 
     position: relative;
-    background-color: rgba(255, 255, 255, 0.85); 
+    background-color: transparent; /* Made transparent so the background logo shows! */
 }
 
 /* Article styles */
@@ -58,11 +61,11 @@ article {
     border-right: 2px solid black; 
     box-sizing: border-box;
     column-count: 3; 
-    column-rule: 3px dashed blue; /* Thickened and styled to match */
+    column-rule: 3px dashed blue; 
     text-align: justify; 
 }
 
-/* Headings - Changed to blue and set to span across columns */
+/* Headings */
 article h1, article h2 {
     color: blue; 
     column-span: all;
@@ -75,11 +78,11 @@ article p::first-letter {
     font-weight: bold;
 }
 
-/* Image wrapping style - Changed to float left */
+/* Image wrapping style - NASA Logo */
 .wrap-img {
-    float: left; /* Image now sits on the left */
-    margin: 0 15px 5px 0; /* Adjusted margins so text wraps cleanly */
-    width: 180px; /* Adjust this value if the NASA logo looks too big/small */
+    float: left; 
+    margin: 0 15px 5px 0; 
+    width: 180px; 
 }
 
 /* Aside / Sidebar styles */
