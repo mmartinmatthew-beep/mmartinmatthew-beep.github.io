@@ -1,0 +1,60 @@
+/* Global body styling */
+body {
+    font-family: "Times New Roman", Times, serif; /* Matches standard academic look in screenshot */
+    margin: 20px;
+    background-color: white;
+}
+
+/* Menu bar styling */
+nav {
+    display: flex;
+    background-color: blue;
+    margin-bottom: 20px;
+}
+
+nav a {
+    flex: 1; /* Distributes links evenly across the bar */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    text-decoration: none;
+    font-weight: bold;
+    border-right: 2px solid white; /* The white dividing line between links */
+}
+
+nav a:last-child {
+    border-right: none; /* Removes the divider on the very last link */
+}
+
+nav a:hover {
+    background-color: darkblue; /* Slight color change on hover */
+}
+
+/* Article and Heading styling */
+article h1, article h2 {
+    color: black;
+}
+
+article p {
+    text-align: justify; /* Matches the blocky paragraph style in the screenshot */
+    line-height: 1.5;
+}
+
+/* Aside list styling (Required for Q5) */
+aside ol {
+    list-style-type: upper-roman;
+}
+
+aside ul {
+    list-style-type: square;
+}
+
+/* Link styling for the aside menu */
+aside a {
+    color: blue;
+    text-decoration: underline;
+}
+
+aside a:hover {
+    color: darkblue;
+}
