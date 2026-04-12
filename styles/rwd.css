@@ -1,4 +1,3 @@
-
 html, body {
     margin: 0;
     height: 100%;
@@ -11,7 +10,6 @@ html, body {
     box-sizing: inherit;
 }
 
-/* Top Navigation Styles */
 .top-nav {
     display: flex;
     flex-direction: row;
@@ -46,7 +44,6 @@ html, body {
     text-decoration: underline;
 }
 
-/* Hamburger Menu Button Logic */
 .menu-button-container {
     display: none;
     height: 100%;
@@ -97,7 +94,6 @@ html, body {
     transform: rotate(-405deg);
 }
 
-/* Article Styles */
 article {
     padding: 0 1em;
 }
@@ -117,7 +113,6 @@ article img {
     max-width: 760px;
 }
 
-/* Footer Styles */
 footer {
     border-top: 2px solid #f46b45;
     text-align: center;
@@ -126,7 +121,6 @@ footer {
     margin-top: 2em;
 }
 
-/* Responsive Media Query (Max Width: 700px) */
 @media (max-width: 700px) {
     .menu-button-container {
         display: flex;
