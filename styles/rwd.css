@@ -94,10 +94,9 @@ html, body {
     transform: rotate(-405deg);
 }
 
+/* Reverted back to strict assignment rules for the wide layout */
 article {
-    padding: 2em 1em; 
-    max-width: 900px; 
-    margin: 0 auto;   
+    padding: 0 1em; 
 }
 
 article h2 {
@@ -106,11 +105,10 @@ article h2 {
 
 article p {
     font-size: 1em;
-    line-height: 1.6;
 }
 
 article img {
-    margin: 1.5em auto; 
+    margin: auto; 
     display: block;
     width: 100%;
     max-width: 760px;
