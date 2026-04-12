@@ -94,7 +94,6 @@ html, body {
     transform: rotate(-405deg);
 }
 
-/* Reverted back to strict assignment rules for the wide layout */
 article {
     padding: 0 1em; 
 }
