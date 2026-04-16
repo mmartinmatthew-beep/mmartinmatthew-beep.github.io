@@ -1,3 +1,4 @@
+/* Reset margins, full height, base font and box-sizing */
 html, body {
     margin: 0;
     height: 100%;
@@ -6,10 +7,12 @@ html, body {
     box-sizing: border-box;
 }
 
+  /* Inherit box-sizing for all elements */
 *, *:before, *:after {
     box-sizing: inherit;
 }
 
+  /* Horizontal navbar with gradient background */
 .top-nav {
     display: flex;
     flex-direction: row;
@@ -22,11 +25,13 @@ html, body {
     padding: 1em;
 }
 
+  /* White unstyled nav links */
 .top-nav a {
     text-decoration: none;
     color: white;
 }
 
+  /* Horizontal menu list layout */
 .menu {
     display: flex;
     flex-direction: row;
@@ -35,15 +40,18 @@ html, body {
     padding: 0;
 }
 
+  /* Spacing between menu items */
 .menu > li {
     margin: 0 1rem;
     overflow: hidden;
 }
 
+  /* Underline on hover and active link */
 .menu a:hover, a.current {
     text-decoration: underline;
 }
 
+  /* Hidden hamburger button container (shown on mobile) */
 .menu-button-container {
     display: none;
     height: 100%;
@@ -54,10 +62,12 @@ html, body {
     align-items: center;
 }
 
+  /* Hidden checkbox driving the toggle */
 #menu-toggle {
     display: none;
 }
 
+  /* Hamburger icon: three white bars */
 .menu-button,
 .menu-button::before,
 .menu-button::after {
@@ -70,49 +80,59 @@ html, body {
     border-radius: 2px;
 }
 
+  /* Top bar of hamburger */
 .menu-button::before {
     content: '';
     margin-top: -8px;
 }
 
+  /* Bottom bar of hamburger */
 .menu-button::after {
     content: '';
     margin-top: 8px;
 }
 
+  /* Rotate top bar into X when toggled */
 #menu-toggle:checked + .menu-button-container .menu-button::before {
     margin-top: 0px;
     transform: rotate(405deg);
 }
 
+  /* Hide middle bar when toggled */
 #menu-toggle:checked + .menu-button-container .menu-button {
     background: rgba(255, 255, 255, 0);
 }
 
+  /* Rotate bottom bar into X when toggled */
 #menu-toggle:checked + .menu-button-container .menu-button::after {
     margin-top: 0px;
     transform: rotate(-405deg);
 }
 
+  /* Base article padding */
 article {
-    padding: 0 1em; 
+    padding: 0 1em;
 }
 
+  /* Article heading size */
 article h2 {
     font-size: 1.25em;
 }
 
+  /* Article paragraph size */
 article p {
     font-size: 1em;
 }
 
+  /* Centered responsive article images */
 article img {
-    margin: auto; 
+    margin: auto;
     display: block;
     width: 100%;
     max-width: 760px;
 }
 
+  /* Footer with top border, centered text */
 footer {
     border-top: 2px solid #f46b45;
     text-align: center;
@@ -121,11 +141,15 @@ footer {
     margin-top: 2em;
 }
 
+  /* Mobile breakpoint at 700px */
 @media (max-width: 700px) {
+
+      /* Show hamburger button on mobile */
     .menu-button-container {
         display: flex;
     }
 
+      /* Stack menu vertically, full width */
     .menu {
         position: absolute;
         top: 0;
@@ -137,6 +161,7 @@ footer {
         align-items: center;
     }
 
+      /* Collapse menu items by default */
     #menu-toggle ~ .menu li {
         height: 0;
         margin: 0;
@@ -145,6 +170,7 @@ footer {
         transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     }
 
+      /* Expand menu items when toggled */
     #menu-toggle:checked ~ .menu li {
         border: 1px solid #333;
         height: 2.5em;
@@ -152,6 +178,7 @@ footer {
         transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     }
 
+      /* Dark full-width mobile menu items */
     .menu > li {
         display: flex;
         justify-content: center;
@@ -162,18 +189,22 @@ footer {
         background-color: #222;
     }
 
+      /* Subtle divider between mobile items */
     .menu > li:not(:last-child) {
         border-bottom: 1px solid #444;
     }
 
+      /* Smaller heading on mobile */
     article h2 {
         font-size: 1.1em;
     }
 
+      /* Smaller paragraph text on mobile */
     article p {
         font-size: .8em;
     }
 
+      /* Thinner footer border, smaller text on mobile */
     footer {
         border-top: 1px solid #f46b45;
         text-align: center;
