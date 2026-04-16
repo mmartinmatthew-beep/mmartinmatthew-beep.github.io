@@ -1,5 +1,7 @@
-
-    /*Setting up the document font, height,etc*/
+/* =========================================
+   BASE STYLES
+   Setting up the document font, height, and overall margins 
+   ========================================= */
 html, body {
     margin: 1em; /* Base margin around the whole page [cite: 688-689] */
     margin-bottom: 5em; /* ADDED: Extra space added to the bottom margin as requested */
@@ -12,7 +14,10 @@ html, body {
     box-sizing: border-box;
 }
 
-    /* creating a seperate border*/
+/* =========================================
+   TABLE 1 STYLES (From Instructions)
+   Uses a 'separate' border collapse to give cells double borders.
+   ========================================= */
 table.first {
     border-collapse: separate;
     border: 2px solid black;
@@ -22,16 +27,19 @@ table.first th, table.first td {
     border: 2px solid blue;
 }
 
-    /* Zebra striping: makes every odd row light blue */
+/* Zebra striping: makes every odd row light blue */
 table.first tr:nth-child(odd) {
     background-color: lightblue;
 }
 
-    /*Using a 'collapse' border to make single-line borders. */
+/* =========================================
+   TABLE 2 STYLES (From Instructions)
+   Uses a 'collapse' border to make single-line borders.
+   ========================================= */
 table.second {
     border-collapse: collapse;
     border: 2px solid purple;
-    caption-side: bottom;   /* Moves the caption below the table */
+    caption-side: bottom; /* Moves the caption below the table */
 }
 
 table.second th {
@@ -40,69 +48,76 @@ table.second th {
 
 table.second th, table.second td {
     padding: 0.7em;
-    vertical-align: middle;     /* Centers text vertically within merged cells */
+    vertical-align: middle; /* Centers text vertically within merged cells */
     border: 2px solid purple;
 }
 
-    /* Applies a bottom border only to the very first row inside the <thead> */
+/* Applies a bottom border only to the very first row inside the <thead> */
 table.second thead tr:first-child {
     border-bottom: 2px solid purple;
 }
 
+/* =========================================
+   TABLE 3 STYLES (The Assignment Task)
+   Requires vertical alignment to the top and specific orange borders.
+   ========================================= */
 table.third {
     border-collapse: collapse;
     border: 2px solid orangered;
     width: 100%;
-    max-width: 600px;   /* Keeps the table from stretching too wide on large screens */
+    max-width: 600px; /* Keeps the table from stretching too wide on large screens */
 }
 
-    /* Apply padding and light gray inner borders to all cells */
+/* Apply padding and light gray inner borders to all cells */
 table.third th, table.third td {
     padding: 0.7em;
     border: 1px solid #ccc; 
 }
 
-    /* Aligns the Category numbers (1, 2, 3) to the top of their merged cells [cite: 731] */
+/* Aligns the Category numbers (1, 2, 3) to the top of their merged cells [cite: 731] */
 table.third td {
     vertical-align: top;
 }
 
-    /* Distinct background color for the header section */
+/* Distinct background color for the header section */
 table.third thead {
     background-color: #ffe6d9;
 }
 
-    /* Structural pseudo-classes to apply thick orangered borders to the top and bottom of the table header [cite: 732-733] */
+/* Structural pseudo-classes to apply thick orangered borders to the top and bottom of the table header [cite: 732-733] */
 table.third thead tr:first-child {
     border-top: 2px solid orangered;
     border-bottom: 2px solid orangered;
 }
 
-    /* Applies a thick orangered border to the very bottom of the table body [cite: 732-733] */
+/* Applies a thick orangered border to the very bottom of the table body [cite: 732-733] */
 table.third tbody tr:last-child {
     border-bottom: 2px solid orangered;
 }
 
-    /* Zebra striping: applies a subtle gray background to even rows in the body */
+/* Zebra striping: applies a subtle gray background to even rows in the body */
 table.third tbody tr:nth-child(even) {
     background-color: #fdfdfd;
 }
 
-    /* Aligns the main 'TABLE 3' title to the left */
+/* Aligns the main 'TABLE 3' title to the left */
 table.third th.table-title {
     text-align: left;
     font-size: 1.1em;
 }
 
-    /*converts the table to a mobile-friendly stacked list format */
-   
+/* =========================================
+   MEDIA QUERY (Responsive Design)
+   When the screen shrinks below 425px, this converts the table 
+   into a mobile-friendly stacked list format [cite: 734-742].
+   ========================================= */
 @media only screen and (max-width: 425px) {
-        /* Changes cells from a grid format to stacked blocks */
+    /* Changes cells from a grid format to stacked blocks */
     th, td {
         display: block;
     }
     
-        /* Hides the table headers and the category numbers on small screens */
+    /* Hides the table headers and the category numbers on small screens */
     thead, td.number {
         display: none;
     }
@@ -111,7 +126,7 @@ table.third th.table-title {
         padding: 0;
     }
 
-     /* Extra formatting to make the stacked rows look clean on mobile */
+    /* Extra formatting to make the stacked rows look clean on mobile */
     table.third td {
         padding: 0.5em 0;
         border: none;
