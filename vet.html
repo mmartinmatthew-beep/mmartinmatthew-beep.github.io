@@ -12,13 +12,13 @@
         
         <nav class="sidebar">
             <ul>
-                <li><a href="#" class="active">Veterans Benefits Processing</a></li>
-                <li><a href="#">Frequently Asked Questions</a></li>
-                <li><a href="#">Contact The Team</a></li>
-                <li><a href="#">Active Duty Students</a></li>
-                <li><a href="#">Federal Benefits</a></li>
-                <li><a href="#">Hazlewood</a></li>
-                <li><a href="#">Veterans and Military Connected Center</a></li>
+                <li><a href="blank.html" class="active">Veterans Benefits Processing</a></li>
+                <li><a href="blank.html">Frequently Asked Questions</a></li>
+                <li><a href="blank.html">Contact The Team</a></li>
+                <li><a href="blank.html">Active Duty Students</a></li>
+                <li><a href="blank.html">Federal Benefits</a></li>
+                <li><a href="blank.html">Hazlewood</a></li>
+                <li><a href="blank.html">Veterans and Military Connected Center</a></li>
             </ul>
         </nav>
 
@@ -27,7 +27,7 @@
             <section class="hero">
                 <h1>Use Your Benefits</h1>
                 <p>Created in 2023, our department provides personalized assistance as you navigate utilizing your veteran and dependent education benefits. Whether you are a veteran, an active service member, or a dependent, our team ensures your transition to SHSU is seamless.</p>
-                <a href="#portal" class="btn-primary">Access Online Certification Portal</a>
+                <a href="blank.html" class="btn-primary">Access Online Certification Portal</a>
                 <span class="alert-text">Notice: All documents must be submitted through our online portal. Emailed, faxed, or mailed documents will not be accepted.</span>
             </section>
 
@@ -37,14 +37,14 @@
                     <h2>Federal Benefits</h2>
                     <p>VA educational benefits are federal benefits earned by a service member or veteran. Entitlement can change due to length of service, discharge characterization, and home of record.</p>
                     <p>Stop waiting on hold—use our step-by-step portal to upload your Certificate of Eligibility (COE) and register your classes for the upcoming term.</p>
-                    <a href="#va-info" class="text-link">View VA Submission Steps →</a>
+                    <a href="blank.html" class="text-link">View VA Submission Steps →</a>
                 </div>
 
                 <div class="card">
                     <h2>Hazlewood Benefit</h2>
                     <p>The Lone Star State thanks you for your service. The Hazlewood Act provides eligible veterans, spouses, and dependents with up to 150 credit hours of tuition exemption.</p>
                     <p>Submit your Hazlewood semester waivers directly through the portal before the fee payment deadline to ensure your account is credited on time.</p>
-                    <a href="#hazlewood-info" class="text-link">View Hazlewood Waiver Steps →</a>
+                    <a href="blank.html" class="text-link">View Hazlewood Waiver Steps →</a>
                 </div>
 
             </section>
@@ -55,5 +55,20 @@
         Ask<br>VBP
     </div>
 
+    <div class="chat-window" id="chatWindow">
+        <div class="chat-header">
+            VBP-2026 Assistant
+            <button id="closeChat">X</button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot-message">Hello! I am VBP-2026. Do you have questions about VA Benefits, the Hazlewood Act, or the Certification Portal?</div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="chatInput" placeholder="Type a message..." autocomplete="off">
+            <button id="sendBtn">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
