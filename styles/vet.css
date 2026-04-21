@@ -72,7 +72,7 @@ h1, h2, h3 {
 /* --- Main Content Area --- */
 .content-area {
     flex: 1;
-    padding: 0; 
+    padding: 0; /* Removing padding to allow header image to stretch */
     background-color: var(--shsu-bg-light); 
 }
 
