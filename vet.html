@@ -69,6 +69,70 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        const chatbotContainer = document.getElementById('vbp-chatbot-container');
+        const chatWindow = document.getElementById('chatWindow');
+        const closeChat = document.getElementById('closeChat');
+        const chatInput = document.getElementById('chatInput');
+        const sendBtn = document.getElementById('sendBtn');
+        const chatMessages = document.getElementById('chatMessages');
+
+        chatbotContainer.addEventListener('click', () => {
+            chatWindow.style.display = 'flex';
+            chatbotContainer.style.display = 'none';
+        });
+
+        closeChat.addEventListener('click', () => {
+            chatWindow.style.display = 'none';
+            chatbotContainer.style.display = 'flex';
+        });
+
+        function sendMessage() {
+            const text = chatInput.value.trim();
+            if (text === '') return;
+
+            addMessage(text, 'user-message');
+            chatInput.value = '';
+
+            setTimeout(() => {
+                const response = getBotResponse(text.toLowerCase());
+                addMessage(response, 'bot-message');
+            }, 600);
+        }
+
+        sendBtn.addEventListener('click', sendMessage);
+
+        chatInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+
+        function addMessage(text, className) {
+            const msgDiv = document.createElement('div');
+            msgDiv.classList.add('message', className);
+            msgDiv.textContent = text;
+            chatMessages.appendChild(msgDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function getBotResponse(input) {
+            if (input.includes('hazlewood')) {
+                return "To use the Hazlewood Act, you must submit a semester waiver directly through our online certification portal before the fee payment deadline. Do you need the link to the portal?";
+            } 
+            else if (input.includes('va') || input.includes('gi bill')) {
+                return "For VA educational benefits, please upload your Certificate of Eligibility (COE) using our step-by-step online portal.";
+            } 
+            else if (input.includes('portal') || input.includes('submit') || input.includes('link')) {
+                return "You can access the certification portal by clicking the main 'Access Online Certification Portal' button on the homepage. Please remember we do not accept emailed or faxed documents.";
+            } 
+            else if (input.includes('contact') || input.includes('call') || input.includes('phone') || input.includes('where')) {
+                return "We are located in the Estill Building, Suite 228. You can also reach us at vetbenefits@shsu.edu or call 936-294-1440.";
+            }
+            else {
+                return "I am still learning! For now, I can help with Hazlewood waivers, VA benefits, and finding the online portal. What would you like to know?";
+            }
+        }
+    </script>
 </body>
 </html>
