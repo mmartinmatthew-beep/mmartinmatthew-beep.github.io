@@ -23,31 +23,40 @@
         </nav>
 
         <main class="content-area">
+
+            <div class="header-image-container">
+                <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80" alt="University Campus">
+                <div class="header-image-overlay">
+                    <h1>VETERANS BENEFITS PROCESSING</h1>
+                </div>
+            </div>
             
-            <section class="hero">
-                <h1>Use Your Benefits</h1>
-                <p>Created in 2023, our department provides personalized assistance as you navigate utilizing your veteran and dependent education benefits. Whether you are a veteran, an active service member, or a dependent, our team ensures your transition to SHSU is seamless.</p>
-                <a href="blank.html" class="btn-primary">Access Online Certification Portal</a>
-                <span class="alert-text">Notice: All documents must be submitted through our online portal. Emailed, faxed, or mailed documents will not be accepted.</span>
-            </section>
+            <div class="inner-content">
+                <section class="hero">
+                    <h2>Use Your Benefits</h2>
+                    <p>Created in 2023, our department provides personalized assistance as you navigate utilizing your veteran and dependent education benefits. Whether you are a veteran, an active service member, or a dependent, our team ensures your transition to SHSU is seamless.</p>
+                    <a href="blank.html" class="btn-primary">Access Online Certification Portal</a>
+                    <span class="alert-text">Notice: All documents must be submitted through our online portal. Emailed, faxed, or mailed documents will not be accepted.</span>
+                </section>
 
-            <section class="benefits-grid">
-                
-                <div class="card">
-                    <h2>Federal Benefits</h2>
-                    <p>VA educational benefits are federal benefits earned by a service member or veteran. Entitlement can change due to length of service, discharge characterization, and home of record.</p>
-                    <p>Stop waiting on hold—use our step-by-step portal to upload your Certificate of Eligibility (COE) and register your classes for the upcoming term.</p>
-                    <a href="blank.html" class="text-link">View VA Submission Steps →</a>
-                </div>
+                <section class="benefits-grid">
+                    
+                    <div class="card">
+                        <h3>Federal Benefits</h3>
+                        <p>VA educational benefits are federal benefits earned by a service member or veteran. Entitlement can change due to length of service, discharge characterization, and home of record.</p>
+                        <p>Stop waiting on hold—use our step-by-step portal to upload your Certificate of Eligibility (COE) and register your classes for the upcoming term.</p>
+                        <a href="blank.html" class="text-link">View VA Submission Steps →</a>
+                    </div>
 
-                <div class="card">
-                    <h2>Hazlewood Benefit</h2>
-                    <p>The Lone Star State thanks you for your service. The Hazlewood Act provides eligible veterans, spouses, and dependents with up to 150 credit hours of tuition exemption.</p>
-                    <p>Submit your Hazlewood semester waivers directly through the portal before the fee payment deadline to ensure your account is credited on time.</p>
-                    <a href="blank.html" class="text-link">View Hazlewood Waiver Steps →</a>
-                </div>
+                    <div class="card">
+                        <h3>Hazlewood Benefit</h3>
+                        <p>The Lone Star State thanks you for your service. The Hazlewood Act provides eligible veterans, spouses, and dependents with up to 150 credit hours of tuition exemption.</p>
+                        <p>Submit your Hazlewood semester waivers directly through the portal before the fee payment deadline to ensure your account is credited on time.</p>
+                        <a href="blank.html" class="text-link">View Hazlewood Waiver Steps →</a>
+                    </div>
 
-            </section>
+                </section>
+            </div>
         </main>
     </div>
 
@@ -120,7 +129,7 @@
             if (input.includes('hazlewood')) {
                 return "To use the Hazlewood Act, you must submit a semester waiver directly through our online certification portal before the fee payment deadline. Do you need the link to the portal?";
             } 
-            else if (input.includes('va') || input.includes('gi bill')) {
+            else if (input.includes('va') || input.includes('gi bill') || input.includes('federal')) {
                 return "For VA educational benefits, please upload your Certificate of Eligibility (COE) using our step-by-step online portal.";
             } 
             else if (input.includes('portal') || input.includes('submit') || input.includes('link')) {

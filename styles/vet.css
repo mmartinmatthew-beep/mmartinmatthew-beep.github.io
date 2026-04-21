@@ -72,22 +72,59 @@ h1, h2, h3 {
 /* --- Main Content Area --- */
 .content-area {
     flex: 1;
-    padding: 40px 60px;
+    padding: 0; 
     background-color: var(--shsu-bg-light); 
+}
+
+/* --- Header Image --- */
+.header-image-container {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+
+.header-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+}
+
+/* Overlay Text on Image */
+.header-image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(0, 72, 81, 0.85));
+    padding: 30px 60px;
+    box-sizing: border-box;
+}
+
+.header-image-overlay h1 {
+    color: var(--shsu-white);
+    margin: 0;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Inner content wrapper for spacing below the image */
+.inner-content {
+    padding: 40px 60px;
 }
 
 /* --- Hero Section --- */
 .hero {
     background-color: var(--shsu-white);
     padding: 40px;
-    /* Mimicking the orange accent bar on the left */
     border-left: 6px solid var(--shsu-orange);
     margin-bottom: 40px;
 }
 
-.hero h1 {
+.hero h2 {
     color: var(--shsu-orange);
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     margin-top: 0;
     margin-bottom: 15px;
 }
@@ -135,12 +172,11 @@ h1, h2, h3 {
 .card {
     background-color: var(--shsu-white);
     padding: 40px;
-    /* SHSU official teal top border */
     border-top: 6px solid var(--shsu-teal);
     box-shadow: 0 4px 10px rgba(0,0,0,0.03); 
 }
 
-.card h2 {
+.card h3 {
     color: var(--shsu-teal);
     margin-top: 0;
     font-size: 2.2rem;
@@ -152,7 +188,6 @@ h1, h2, h3 {
     margin-bottom: 20px;
 }
 
-/* Standard links inside text */
 .text-link {
     color: var(--shsu-orange);
     font-weight: bold;
@@ -296,7 +331,7 @@ h1, h2, h3 {
 @media (max-width: 1024px) {
     .main-wrapper { flex-direction: column; }
     .sidebar { width: 100%; border-right: none; border-bottom: 1px solid var(--border-color); padding: 20px; }
-    .content-area { padding: 30px; }
-    .hero h1 { font-size: 2.5rem; }
+    .inner-content { padding: 30px; }
+    .hero h2 { font-size: 2.5rem; }
     .hero { padding: 30px; }
 }
