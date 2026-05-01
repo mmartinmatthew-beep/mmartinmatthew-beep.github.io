@@ -1,0 +1,67 @@
+/* =========================================
+   FEDERAL BENEFITS PAGE STYLES 
+   ========================================= */
+
+.fed-header-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+.fed-title-left {
+    flex: 1;
+    min-width: 300px;
+}
+
+.fed-title-right {
+    flex: 1;
+    min-width: 300px;
+    font-size: 1rem;
+    color: var(--shsu-teal);
+    line-height: 1.5;
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 2px solid var(--shsu-teal);
+    color: var(--shsu-teal);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px; /* Gives it the rounded pill look */
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background-color: var(--shsu-teal);
+    color: var(--shsu-white);
+}
+
+.fed-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+.fed-table th, .fed-table td {
+    padding: 18px 20px;
+    color: var(--shsu-teal);
+    font-weight: bold;
+}
+
+.fed-table thead tr {
+    background-color: #BCE0F4; /* Light blue header */
+}
+
+.fed-table tbody tr:nth-child(even) {
+    background-color: #E5F2F9; /* Alternating light blue row */
+}
+
+.fed-table tbody tr:nth-child(odd) {
+    background-color: #FFFFFF;
+}
