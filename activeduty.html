@@ -226,5 +226,22 @@
         else return "I am still learning! For now, I can help with Hazlewood waivers, VA benefits, and finding the online portal. What would you like to know?";
     }
 </script>
+<script>
+    // Accordion Logic for Active Duty Page
+    document.querySelectorAll(".ad-question").forEach(q => {
+        q.addEventListener("click", () => {
+            const answer = q.nextElementSibling;
+            const icon = q.querySelector(".ad-icon");
+            
+            if (answer.style.maxHeight) {
+                answer.style.maxHeight = null;
+                icon.textContent = "+";
+            } else {
+                answer.style.maxHeight = answer.scrollHeight + "px";
+                icon.textContent = "–"; // minus sign
+            }
+        });
+    });
+</script>
 </body>
 </html>

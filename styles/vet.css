@@ -504,3 +504,114 @@ h1, h2, h3 {
     border-top: 1px solid #92C13D;
     padding-top: 20px;
 }
+/* =========================================
+   ACTIVE DUTY PAGE STYLES 
+   ========================================= */
+
+.ad-header-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+}
+
+.ad-title-left {
+    flex: 1;
+    min-width: 300px;
+}
+
+.giant-orange-title {
+    font-size: 3.5rem;
+    color: var(--shsu-orange);
+    line-height: 1;
+    margin: 0;
+}
+
+.ad-title-right {
+    flex: 1;
+    min-width: 300px;
+    font-size: 1rem;
+    color: var(--shsu-teal);
+    font-weight: 600;
+}
+
+.ad-main-card {
+    background-color: #F1EFE3; 
+    padding: 50px;
+}
+
+.ad-card-title {
+    font-size: 3rem;
+    color: var(--shsu-teal);
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.ad-accordion-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ad-item {
+    border-radius: 6px;
+    overflow: hidden;
+    background: var(--shsu-teal);
+}
+
+.ad-question {
+    width: 100%;
+    padding: 20px 25px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: none;
+    background: transparent;
+    color: #92C13D; 
+    cursor: pointer;
+    transition: background 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.ad-question:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.ad-icon {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.ad-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding: 0 25px;
+    color: var(--shsu-white);
+}
+
+.ad-answer p, .ad-answer ul, .ad-answer ol {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.ad-answer ul, .ad-answer ol {
+    padding-left: 20px;
+}
+
+.ad-answer li {
+    margin-bottom: 10px;
+}
+
+.ad-item .ad-question {
+    border-bottom: 1px solid transparent;
+}
+.ad-item .ad-answer {
+    border-top: 1px solid #92C13D;
+    padding-top: 20px;
+}
