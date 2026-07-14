@@ -36,8 +36,7 @@
             </tbody>
         </table>
     </main>
-
-    <script>
+<script>
         function loadMarketData() {
             const eventType = document.getElementById('event-selector').value;
             const tbody = document.getElementById('market-body');
@@ -52,14 +51,34 @@
                             <td><strong>${market.driver}</strong></td>
                             <td class="price-yes">$${market.yes_price}</td>
                             <td>$${market.no_price}</td>
-                            <td><button class="trade-btn">Queue Order</button></td>
+                            <td><button class="trade-btn" onclick="executeTrade('${market.driver}')">Queue Order</button></td>
                         </tr>`;
                         tbody.innerHTML += row;
                     });
                 });
         }
 
+        function executeTrade(driverName) {
+            fetch('/api/trade', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ driver: driverName })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    alert(data.message);
+                } else {
+                    alert('Trade Error: ' + data.message);
+                }
+            });
+        }
+
+        // Load default market on startup
         window.onload = loadMarketData;
     </script>
+    
 </body>
 </html>
