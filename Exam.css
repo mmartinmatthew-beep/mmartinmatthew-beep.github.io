@@ -1,0 +1,86 @@
+/* Body and global styles */
+body {
+    width: 95%;
+    margin: 15px auto;
+    border: 2px solid black; /* Border around the body */
+    background-image: url('your-background-image.jpg'); /* REPLACE THIS WITH A REAL IMAGE URL */
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Fallback color */
+}
+
+/* Navigation Menu */
+nav {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Horizontal lines below menu and above footer */
+.line-horizontal {
+    border-top: 2px solid black;
+    width: 100%;
+}
+
+/* Container to hold article and aside */
+.container {
+    display: flex; /* Helps align the aside and article side by side */
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.85); /* Readability over background */
+}
+
+/* Article styles */
+article {
+    width: 75%;
+    padding: 20px;
+    border-right: 2px solid black; /* Line between the columns */
+    box-sizing: border-box;
+}
+
+/* Paragraph first-letter styling */
+p::first-letter {
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Image wrapping style */
+.wrap-img {
+    float: right; /* Wraps paragraph text around the image */
+    margin: 0 0 15px 15px;
+    width: 250px;
+}
+
+/* Aside / Sidebar styles */
+aside {
+    width: 20%;
+    padding: 21px;
+    box-sizing: border-box;
+    position: fixed; /* Fixed on the screen, does not scroll */
+    right: 2.5%; /* Aligns it properly given the body's 95% width */
+    top: 150px;
+}
+
+aside a {
+    text-decoration: none;
+    color: blue;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
